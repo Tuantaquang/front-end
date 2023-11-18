@@ -12,12 +12,18 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('frontend')}}/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+</head>
 </head>
 
 <body>
   <header>
     <!-- navbar start -->
-    @include('navbar')
+    @include('layout.navbar')
     <!-- navbar end -->
     
   </header>
@@ -27,13 +33,13 @@
         <div class="row">
             <div class="col-sm-2">
                 <!-- sidebar start -->
-                    @include('sidebar')
+                    @include('layout.sidebar')
                 <!-- sidebar end -->
             </div>
             
             <div class="col-sm-10">
                 <!-- main content start -->
-                @include('maincontent')
+                @yield('main-content')
                 <!-- main content end -->
             </div>
         </div>
@@ -52,6 +58,8 @@
         sidebar.classList.toggle("hidden");
     }
 </script>
+
+
   <!-- Bootstrap JavaScript Libraries -->
 
   <script src="{{asset('frontend')}}/js/script.js"></script>

@@ -1,6 +1,18 @@
-#logo {
-  width: 140px;
-  height: 56px;
+#logo-start {
+  width: 50px;
+  height: 40px;
+}
+#logo-center {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-right: 3px;
+}
+#logo-end {
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -79,17 +91,27 @@ body {
   margin-top: 5px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .search {
-    width: 650px;
+    width: 600px;
     height: 40px;
   }
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+
+  #logo-center{
+    font-size: medium;
+  }
+
+  #logo-start{
+    width: 40px;
+    height: 30px;
+  }
+
   .sidebar {
-    width: 78px;
+    width: 88px;
   }
 
   .sidebar #ul-hidden {
@@ -111,15 +133,7 @@ body {
   }
 
   .search .input-group {
-    width: 200px;
-  }
-
-  #hide {
-    display: none;
-  }
-
-  #mic {
-    display: none;
+    width: 60%;
   }
 }
 
@@ -140,13 +154,14 @@ body {
 
 #end {
   white-space: nowrap;
-  display: block;
+
 }
 
 #mainvd {
+  
   overflow: auto;
   overflow-y: scroll;
-  max-height: 100vh;
+  height: 80vh;
 }
 
 .embed-responsive-item {
@@ -154,8 +169,9 @@ body {
 }
 
 @media (max-width: 767px) {
-  .input-group input {
-    display: none;
+
+  .search {
+    width: 100px;;
   }
 
   #button-addon2 {
@@ -164,11 +180,189 @@ body {
 
   #mainvd .embed-responsive iframe {
     display: flex;
-    display: j;
+  }
+
+  #logo-start{
+    width: 30px;
+    width: 20px;
+    margin-left: 20px;
+  }
+  #logo-center{
+    font-size: large;
+  }
+
+  #sidebar-toggle{
+    margin-top: 10px;
+  }
+
+  #end{
+    display: none;
   }
 }
 
 #shorts {
   white-space: nowrap;
   overflow-x: scroll;
+}
+
+#vd-center iframe {
+  width: 400px;
+  height: 220px;
+}
+
+.embed-responsive-9by16 iframe {
+  width: 220px;
+  height: 400px;
+}
+
+@media (max-width: 1496px) {
+  #vd-center iframe {
+    width: 400px;
+    height: 220px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 220px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1450px) {
+  #vd-center iframe {
+    width: 380px;
+    height: 220px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 210px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1380px) {
+  #vd-center iframe {
+    width: 360px;
+    height: 200px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 200px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1310px) {
+  #vd-center iframe {
+    width: 340px;
+    height: 200px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 190px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1240px) {
+  #vd-center iframe {
+    width: 320px;
+    height: 200px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 180px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 1175px) {
+  #vd-center iframe {
+    width: 300px;
+    height: 180px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 170px;
+    height: 370px;
+  }
+}
+
+@media (max-width: 1120px) {
+  #vd-center iframe {
+    width: 280px;
+    height: 180px;
+  }
+
+  .embed-responsive-9by16 iframe {
+    width: 160px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 1040px) {
+  #vd-center iframe {
+    width: 260px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 992px) {
+  #vd-center iframe {
+    width: 380px;
+    height: 220px;
+  }
+  .embed-responsive-9by16 iframe {
+    width: 150px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 940px) {
+  #vd-center iframe {
+    width: 360px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 890px) {
+  #vd-center iframe {
+    width: 340px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 840px) {
+  #vd-center iframe {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 790px) {
+  #vd-center iframe {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  #vd-center iframe {
+    width: 420px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 630px) {
+  #vd-center iframe {
+    width: 360px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+
+  
 }
